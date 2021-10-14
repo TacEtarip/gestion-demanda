@@ -1,0 +1,27 @@
+.nav-bar-link-fix {
+  color: rgba(255, 255, 255, 0.55);
+  display: block;
+  padding: 0.5rem 1rem;
+  &:hover {
+    color: #fff;
+  }
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  justify-self: center;
+}
+
+.navbar-brand h5 {
+  margin: 0;
+  font-weight: 400;
+  span {
+    font-weight: 800;
+  }
+}
+
+thead {
+  background-color: #393d42;
+  color: white;
+}

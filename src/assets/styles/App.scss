@@ -1,0 +1,7 @@
+@import './metrica-colors.scss';
+$theme-colors: (
+  'primary': $main-color,
+  'secondary': $secondary-color,
+  'ultra-dark': $dark-color,
+);
+@import '~bootstrap/scss/bootstrap';

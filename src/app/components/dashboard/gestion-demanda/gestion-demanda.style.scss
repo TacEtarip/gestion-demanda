@@ -1,0 +1,32 @@
+@import '../../../../assets/styles/metrica-colors.scss';
+
+main {
+  padding: 2em 0;
+  h1 {
+    color: $secondary-color;
+    font-weight: 200;
+  }
+  section {
+    padding-top: 2em;
+  }
+}
+
+.rdt {
+  input {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    font-size: 1.25rem;
+  }
+}
+
+.rdtPicker td.rdtActive,
+.rdtPicker td.rdtActive:hover {
+  background-color: $secondary-color !important;
+}
+
+tbody tr td {
+  &:hover {
+    cursor: pointer;
+  }
+}
