@@ -5,6 +5,7 @@ export interface IEmpleadoDemanda {
   nombres: string;
   mes: number;
   anio: number;
+  horas_totales: number;
   demandas: {
     fecha: string;
     valor: number;

@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <React.Fragment>
       <Navbar collapseOnSelect expand="lg" bg="secondary" variant="dark">
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="#">
             <h5>
               Karina<span>Extranet</span>
@@ -20,15 +20,27 @@ const Dashboard = () => {
             <Nav className="me-auto">
               <Link
                 className="nav-bar-link-fix"
-                to="/dashboard/gestion-demanda"
+                to={{
+                  state: { fromDashboard: true },
+                  pathname: '/dashboard/gestion-demanda',
+                }}
               >
                 Gestión De Demanda
+              </Link>
+              <Link
+                className="nav-bar-link-fix"
+                to={{
+                  state: { fromDashboard: true },
+                  pathname: '/dashboard/programacion-demanda',
+                }}
+              >
+                Programar
               </Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Container>
+      <Container fluid>
         <DashboardRouter />
       </Container>
     </React.Fragment>
